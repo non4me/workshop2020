@@ -7,5 +7,9 @@ module.exports = {
     '<rootDir>/libs/flight-lib',
     '<rootDir>/libs/dashboard-lib',
     '<rootDir>/libs/passenger-api',
+    '<rootDir>/libs/luggage/domain',
+    '<rootDir>/apps/luggage',
+    '<rootDir>/libs/luggage/feature-checkin',
+    '<rootDir>/libs/luggage/feature-report-loss',
   ],
 };
