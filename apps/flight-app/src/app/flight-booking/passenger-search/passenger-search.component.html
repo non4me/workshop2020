@@ -1,0 +1,58 @@
+<div class="card">
+
+  <div class="header">
+    <h2 class="title">Passengers</h2>
+  </div>
+
+  <div class="spinner" *ngIf="showSpinner">Loading...</div>
+
+  <div class="content">
+
+    <div fxLayout="row" fxLayoutGap="20px" class="subheader">
+      <div fxFlex="*">
+        <strong>ID</strong>
+      </div>
+
+      <div fxFlex="*">
+        <strong>Name</strong>
+      </div>
+
+      <div fxFlex="*">
+        <strong>FirstName</strong>
+      </div>
+
+      <div fxFlex="*">
+        <strong>Status</strong>
+      </div>
+
+      <div fxFlex="*">
+        <strong>BonusMiles</strong>
+      </div>
+
+    </div>
+
+    <div fxLayout="row"fxLayoutGap="20px"  *ngFor="let passenger of passengers">
+      <div fxFlex="*">
+        {{ passenger.id }}
+      </div>
+
+      <div fxFlex="*">
+        {{ passenger.name }}
+      </div>
+
+      <div fxFlex="*">
+        {{ passenger.firstName }}
+      </div>
+
+      <div fxFlex="*">
+        {{ passenger.passengerStatus }}
+      </div>
+
+      <div fxFlex="*">
+        {{ passenger.bonusMiles }}
+      </div>
+    </div>
+
+  </div>
+</div>
+
